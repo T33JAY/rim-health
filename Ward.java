@@ -13,4 +13,38 @@
  * */
 public class Ward {
 
+	private String wardNum;
+	
+	private String type;
+	
+	private String facility;
+	
+	public Ward(String wNum, String wType, String wFacility) {
+    	
+		wardNum = wNum;
+        
+        type = wType;
+        
+        facility = wFacility;
+        
+    }
+	
+	public String getWardNum() {
+		
+		return this.wardNum;
+		
+	}
+	
+	public String getType() {
+		
+		return this.type;
+		
+	}
+	
+	public String getFacility() {
+		
+		return this.facility;
+		
+	}
+	
 }
