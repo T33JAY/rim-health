@@ -1,10 +1,7 @@
 /*
  * @name 			RIM Health
  * 
- * @authors 		Ross Hart
- * 					Ruth Gideon
- * 					Inagbo Tamuno
- * 					Maryam Modibbo
+ * @author	 		Ross Hart
  * 
  * @description 	A CSC 306 course project to implement a Health Management System in Java.
  * 
@@ -33,6 +30,7 @@ public class Hospital {
 	private ArrayList<Nurse> nurses;
 	
 	private ArrayList<Patient> patients;
+	
 	
 	
 	public Hospital(String hName, String hAddress, ArrayList<Doctor> hDoctors, ArrayList<Nurse> hNurses, ArrayList<Patient> hPatients) {

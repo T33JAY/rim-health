@@ -2,9 +2,6 @@
  * @name 			RIM Health
  * 
  * @authors 		Ross Hart
- * 					Ruth Gideon
- * 					Inagbo Tamuno
- * 					Maryam Modibbo
  * 
  * @description 	A CSC 306 course project to implement a Health Management System in Java.
  * 
@@ -17,6 +14,8 @@ public class Lab {
 	private String facility;
 	
 	private String labNum;
+	
+	
 	
 	public Lab(String lFacility, String lNum) {
     	
