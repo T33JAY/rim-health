@@ -6,11 +6,12 @@
  * 					Inagbo Tamuno
  * 					Maryam Modibbo
  * 
- * @description 	A CSC 306 class challenge to implement a Bank in Java.
+ * @description 	A CSC 306 course project to implement a Health Management System in Java.
  * 
  * @date			Sat, 20th April, 2019
  * 
  * */
+
 public class Ward {
 
 	private String wardNum;

@@ -6,7 +6,7 @@
  * 					Inagbo Tamuno
  * 					Maryam Modibbo
  * 
- * @description 	A CSC 306 class challenge to implement a Bank in Java.
+ * @description 	A CSC 306 course project to implement a Health Management System in Java.
  * 
  * @date			Sat, 20th April, 2019
  * 
@@ -24,15 +24,36 @@ public class Hospital {
 	
 	private ArrayList<Ward> wards;
 	
-	public Hospital(String hName, String hAddress, Integer hNumOfStaff) {
+	private ArrayList<Lab> labs;
+	
+	private ArrayList<OperationTheater> theaters;
+	
+	private ArrayList<Doctor> doctors;
+	
+	private ArrayList<Nurse> nurses;
+	
+	private ArrayList<Patient> patients;
+	
+	
+	public Hospital(String hName, String hAddress, ArrayList<Doctor> hDoctors, ArrayList<Nurse> hNurses, ArrayList<Patient> hPatients) {
     	
 		name = hName;
         
         address = hAddress;
         
-        numberOfStaff = hNumOfStaff;
+        //numberOfStaff = hNumOfStaff;
         
         wards = new ArrayList<Ward>();
+        
+        labs = new ArrayList<Lab>();
+        
+        theaters = new ArrayList<OperationTheater>();
+        
+        doctors = hDoctors;
+        
+        nurses = hNurses;
+        
+        patients = hPatients;
         
     }
 	
@@ -59,5 +80,51 @@ public class Hospital {
 		return this.wards;
 		
 	}
+	
+	public  ArrayList<Lab> getLabs() {
+		
+		return this.labs;
+		
+	}
+	
+	public  ArrayList<OperationTheater> getTheaters() {
+		
+		return this.theaters;
+		
+	}
+	
+	public  ArrayList<Doctor> getDoctors() {
+		
+		return this.doctors;
+		
+	}
+	
+	public  ArrayList<Nurse> getNurses() {
+		
+		return this.nurses;
+		
+	}
+	
+	public  ArrayList<Patient> getPatients() {
+		
+		return this.patients;
+		
+	}
+	
+    public void openWard(String wNum, String wType, String wFacility) {
+    	
+    	Ward wd = new Ward(wNum, wType, wFacility);
+    	
+    	wards.add(wd);
+    	
+    }
+    
+    public void openLab(String lFacility, String lNum) {
+    	
+    	Lab lb = new Lab(lFacility, lNum);
+    	
+    	labs.add(lb);
+    	
+    }
 	
 }
