@@ -1,10 +1,7 @@
 /*
  * @name 			RIM Health
  * 
- * @authors 		Ross Hart
- * 					Ruth Gideon
- * 					Inagbo Tamuno
- * 					Maryam Modibbo
+ * @authors 		Inagbo Tamuno
  * 
  * @description 	A CSC 306 course project to implement a Health Management System in Java.
  * 
@@ -14,11 +11,16 @@
 
 public class Nurse {
   
-    String staffID;
-    String firstName;
-    String lastName;
-    String qualification;
+	private String staffID;
+	
+	private String firstName;
+	
+	private String lastName;
+	
+	private String qualification;
 
+	
+	
     public Nurse(String staffID, String firstName, String lastName, String qualification) {
 
         this.staffID = staffID;
@@ -28,6 +30,7 @@ public class Nurse {
         this.lastName = lastName;
 
         this.qualification = qualification;
+        
     }
 
     public String getstaffID() {

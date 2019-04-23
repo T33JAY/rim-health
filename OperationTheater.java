@@ -1,10 +1,7 @@
 /*
  * @name 			RIM Health
  * 
- * @authors 		Ross Hart
- * 					Ruth Gideon
- * 					Inagbo Tamuno
- * 					Maryam Modibbo
+ * @authors 		Inagbo Tamuno
  * 
  * @description 	A CSC 306 course project to implement a Health Management System in Java.
  * 
@@ -14,18 +11,22 @@
 
 public class OperationTheater {
   
-    String theatreID;
-    String type;
-    String facility;
+    private String theatreID;
+    
+    private String type;
+    
+    private String facility;
 
 
-    public OperationTheatre(String theatreID, String type, String facility) {
+    
+    public OperationTheater(String theatreID, String type, String facility) {
 
         this.theatreID = theatreID;
 
         this.type = type;
 
         this.facility = facility;
+        
     }
 
     public String getTheatreID() {
@@ -34,9 +35,9 @@ public class OperationTheater {
 
     }
 
-    public void setTheatreID(String staffID) {
+    public void setTheatreID(String tID) {
 
-        this.theatreID = theatreID;
+        this.theatreID = tID;
 
     }
 
