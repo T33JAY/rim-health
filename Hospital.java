@@ -33,13 +33,30 @@ public class Hospital {
 	
 	
 	
-	public Hospital(String hName, String hAddress, ArrayList<Doctor> hDoctors, ArrayList<Nurse> hNurses, ArrayList<Patient> hPatients) {
+	public Hospital(
+			String hName, String hAddress, ArrayList<Doctor> hDoctors, 
+			ArrayList<Nurse> hNurses, ArrayList<Patient> hPatients
+	) 
+	{
     	
 		name = hName;
         
         address = hAddress;
         
-        //numberOfStaff = hNumOfStaff;
+        int count=0;
+        
+        for(@SuppressWarnings("unused") Doctor d:doctors) {
+        	
+        	count+=1;
+        	
+        }
+        
+        for(@SuppressWarnings("unused") Nurse n:nurses) {
+        	
+        	count+=1;
+        }
+        
+        numberOfStaff = count;
         
         wards = new ArrayList<Ward>();
         
