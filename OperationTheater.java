@@ -13,5 +13,56 @@
  * */
 
 public class OperationTheater {
+  
+    String theatreID;
+    String type;
+    String facility;
+
+
+    public OperationTheatre(String theatreID, String type, String facility) {
+
+        this.theatreID = theatreID;
+
+        this.type = type;
+
+        this.facility = facility;
+    }
+
+    public String getTheatreID() {
+
+        return theatreID;
+
+    }
+
+    public void setTheatreID(String staffID) {
+
+        this.theatreID = theatreID;
+
+    }
+
+    public String getType() {
+
+        return type;
+
+    }
+
+    public void setType(String type) {
+
+        this.type = type;
+
+    }
+
+    public String getFacility() {
+
+        return facility;
+
+    }
+
+    public void setFacility(String facility) {
+
+        this.facility = facility;
+
+    }
+
 
 }
