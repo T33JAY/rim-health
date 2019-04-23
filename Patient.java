@@ -33,13 +33,21 @@ public class Patient {
     		String patientAddress, String condition, Ward ward
     ) 
     {
-        this.patientID = patientID;
-        this.patientName = patientName;
-        this.patientAge = patientAge;
-        this.patientGender = patientGender;
+        
+    	this.patientID = patientID;
+        
+    	this.patientName = patientName;
+        
+    	this.patientAge = patientAge;
+        
+    	this.patientGender = patientGender;
+        
         this.patientAddress = patientAddress;
+        
         this.condition = condition;
+        
         this.ward = ward;
+    
     }   
 
     public void setpatientID(int patientID){
