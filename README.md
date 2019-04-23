@@ -1,8 +1,11 @@
 # rim-health
-### A simple health management system written in Java.
+A simple health management system written in Java.
 
-**Authors**
-* <a href="https://github.com/DinnEferet" target="_blank" title="Dinn's GitHub (opens new tab)">Dinn Eferet</a>
-* <a href="https://github.com/T33JAY" target="_blank" title="Jephthah's GitHub (opens new tab)">Jephthah</a>
+
+**Project Authors**
+* <a href="https://github.com/DinnEferet" title="Dinn's GitHub">Dinn Eferet</a>
+* <a href="https://github.com/T33JAY" title="Jephthah's GitHub">Jephthah</a>
 * Maryam Moddibo
 * Ruth Gideon
+
+_RIM Health is currently being built as a class project for the undergraduate course CSC 306 (Object-Oriented Analysis & Design) at the American University of Nigeria, Spring 2019._
