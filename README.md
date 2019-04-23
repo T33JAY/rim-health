@@ -12,4 +12,4 @@ A simple health management system written in Java.
 
 <br/>
 
-_RIM Health is currently being built as a class project for the undergraduate course CSC 306 (Object-Oriented Analysis & Design) at the American University of Nigeria, Spring 2019._
+_RIM Health is currently being built as a class project for the undergraduate course CSC 306 (Object-Oriented Analysis & Design) at the American University of Nigeria._
