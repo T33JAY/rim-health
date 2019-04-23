@@ -1,7 +1,7 @@
 /*
  * @name 			RIM Health
  * 
- * @authors 		Maryam Modibbo
+ * @author	 		Maryam Modibbo
  * 
  * @description 	A CSC 306 course project to implement a Health Management System in Java.
  * 

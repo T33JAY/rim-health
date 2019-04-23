@@ -1,7 +1,7 @@
 /*
  * @name 			RIM Health
  * 
- * @authors 		Ruth Gideon
+ * @author	 		Ruth Gideon
  * 
  * @description 	A CSC 306 course project to implement a Health Management System in Java.
  * 
