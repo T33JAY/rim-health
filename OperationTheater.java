@@ -14,18 +14,14 @@ public class OperationTheater {
     private String theatreID;
     
     private String type;
-    
-    private String facility;
 
 
     
-    public OperationTheater(String theatreID, String type, String facility) {
+    public OperationTheater(String theatreID, String type) {
 
         this.theatreID = theatreID;
 
         this.type = type;
-
-        this.facility = facility;
         
     }
 
@@ -52,18 +48,5 @@ public class OperationTheater {
         this.type = type;
 
     }
-
-    public String getFacility() {
-
-        return facility;
-
-    }
-
-    public void setFacility(String facility) {
-
-        this.facility = facility;
-
-    }
-
 
 }

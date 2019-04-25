@@ -14,8 +14,6 @@ public class Surgeon extends Doctor {
     private int yearsofExperience;
     
     private final String specialty;
-    
-    private final String name;
 
     
     
@@ -26,8 +24,6 @@ public class Surgeon extends Doctor {
     	this.yearsofExperience = d;
         
     	this.specialty = e;
-        
-    	this.name = f;
     
     }
     
@@ -46,7 +42,7 @@ public class Surgeon extends Doctor {
     @Override
     public String toString() {
         
-    	return (name + "" + specialty);
+    	return (super.getName() + "" + specialty);
     
     }
 

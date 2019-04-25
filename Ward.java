@@ -15,17 +15,13 @@ public class Ward {
 	
 	private String type;
 	
-	private String facility;
 	
 	
-	
-	public Ward(String wNum, String wType, String wFacility) {
+	public Ward(String wNum, String wType) {
     	
 		wardNum = wNum;
         
         type = wType;
-        
-        facility = wFacility;
         
     }
 	
@@ -38,12 +34,6 @@ public class Ward {
 	public String getType() {
 		
 		return this.type;
-		
-	}
-	
-	public String getFacility() {
-		
-		return this.facility;
 		
 	}
 	

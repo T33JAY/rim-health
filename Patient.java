@@ -116,13 +116,6 @@ public class Patient {
     
     }
     
-    /**
-    public String getCondition(){
-        
-    	return disease;
-    }
-    **/
-    
     @Override
     public String toString(){
         

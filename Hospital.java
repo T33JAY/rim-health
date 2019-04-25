@@ -126,19 +126,27 @@ public class Hospital {
 		
 	}
 	
-    public void openWard(String wNum, String wType, String wFacility) {
+    public void openWard(String wNum, String wType) {
     	
-    	Ward wd = new Ward(wNum, wType, wFacility);
+    	Ward wd = new Ward(wNum, wType);
     	
     	wards.add(wd);
     	
     }
     
-    public void openLab(String lFacility, String lNum) {
+    public void openLab(String lNum) {
     	
-    	Lab lb = new Lab(lFacility, lNum);
+    	Lab lb = new Lab(lNum);
     	
     	labs.add(lb);
+    	
+    }
+    
+    public void openTheater(String theaterID, String type) {
+    	
+    	OperationTheater th = new OperationTheater(theaterID, type);
+    	
+    	theaters.add(th);
     	
     }
 	

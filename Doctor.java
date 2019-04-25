@@ -9,8 +9,6 @@
  * 
  * */
 
-//import java.util.ArrayList;
-
 import java.util.List;
 
 public class Doctor {
@@ -22,8 +20,6 @@ public class Doctor {
 	private String level;
     
 	private List<Patient> patientlist;
-	
-	//private List<Appointment> appointmentlist;
 
     
 
@@ -34,9 +30,7 @@ public class Doctor {
     	this.StaffID = c;
         
     	this.level = b;
-        
-    	//ArrayList<Doctor> doctorlist = new ArrayList<>();
-    
+    	
     }
 
     public String getName() {
@@ -56,24 +50,12 @@ public class Doctor {
     	return StaffID;
     
     }
-    
-    /**
-    public List<Appointment> getAppointmentlist() {
-        return appointmentlist;
-    }
-    **/
 
     public List<Patient> getPatientList() {
         
     	return patientlist;
     
     }
-    
-    /**
-    public Doctor(List<Appointment> appointmentlist) {
-        this.appointmentlist = appointmentlist;
-    }
-    **/
 
     public void checkup() {
         

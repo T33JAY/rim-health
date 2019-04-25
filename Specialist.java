@@ -9,19 +9,12 @@
  * 
  * */
 
-//import java.util.List;
 
 public class Specialist extends Doctor {
-
-    //private List<Prescription> prescriptions;
-    
-	//private List<Test> test;
 
     private int yearsofExperience;
    
     private String specialty;
-    
-    //private String name;
 
     
     
@@ -32,26 +25,8 @@ public class Specialist extends Doctor {
     	this.yearsofExperience = g;
         
     	this.specialty = h;
-        
-    	//this.name = i;
     
     }
-
-    
-    /**
-    public void setPrescriptions(List<Prescription> prescriptions) {
-        this.prescriptions = prescriptions;
-    }
-
-    public List<Test> getTest() {
-        return test;
-    }
-    
-
-    public void setTest(List<Test> test) {
-        this.test = test;
-    }
-    **/
 
     public int getYearsofExperience() {
         

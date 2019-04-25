@@ -11,25 +11,15 @@
 
 public class Lab {
 	
-	private String facility;
-	
 	private String labNum;
 	
 	
 	
-	public Lab(String lFacility, String lNum) {
-    	
-		facility = lFacility;
+	public Lab(String lNum) {
         
         labNum = lNum;
         
     }
-	
-	public String getFacility() {
-		
-		return this.facility;
-		
-	}
 	
 	public String getLabNum() {
 		
