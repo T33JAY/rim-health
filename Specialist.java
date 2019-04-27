@@ -13,18 +13,18 @@
 public class Specialist extends Doctor {
 
     private int yearsofExperience;
-   
+    
     private String specialty;
 
     
     
-    public Specialist(String a, String b, String c, int g, String h, String i) {
+    public Specialist(String dname, String did, String dlevel, int slexp, String slspec, String i) {
         
-    	super(a, b, c);
+    	super(dname, did, dlevel);
         
-    	this.yearsofExperience = g;
+    	this.yearsofExperience = slexp;
         
-    	this.specialty = h;
+    	this.specialty = slspec;
     
     }
 
@@ -49,6 +49,12 @@ public class Specialist extends Doctor {
     public void setSpecialty(String specialty) {
         
     	this.specialty = specialty;
+    
+    }
+    
+    public void diagnosepatient() {
+    	
+    	System.out.println("The patient is being diagnosed by the specialist");
     
     }
     

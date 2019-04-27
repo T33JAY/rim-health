@@ -11,19 +11,20 @@
 
 public class Surgeon extends Doctor {
 
+
     private int yearsofExperience;
     
     private final String specialty;
 
     
     
-    public Surgeon(String a, String b, String c, int d, String e, String f) {
+    public Surgeon(String dname, String did, String dlevel, int sexp, String sspec, String f) {
         
-    	super(a, b, c);
+    	super(dname, did, dlevel);
         
-    	this.yearsofExperience = d;
+    	this.yearsofExperience = sexp;
         
-    	this.specialty = e;
+    	this.specialty = sspec;
     
     }
     
@@ -48,7 +49,7 @@ public class Surgeon extends Doctor {
 
     public void operate() {
         
-    	System.out.println("Surgeon is operating.");
+    	System.out.println("Operation in progress");
     
     }
 

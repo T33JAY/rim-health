@@ -23,13 +23,13 @@ public class Doctor {
 
     
 
-    public Doctor(String a, String b, String c) {
+    public Doctor(String dname, String did, String dlevel) {
         
-    	this.name = a;
+    	this.name = dname;
         
-    	this.StaffID = c;
+    	this.StaffID = did;
         
-    	this.level = b;
+    	this.level = dlevel;
     	
     }
 
@@ -59,7 +59,7 @@ public class Doctor {
 
     public void checkup() {
         
-    	System.out.println("Doctor is diagnosing.");
+    	System.out.println("Checkup in progress.");
     
     }
 
