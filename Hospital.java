@@ -45,14 +45,14 @@ public class Hospital {
         
         int count=0;
         
-        for(@SuppressWarnings("unused") Doctor d:doctors) {
+        for(@SuppressWarnings("unused") Doctor d:hDoctors) {
         	
         	count+=1;
         	
         }
         
-        for(@SuppressWarnings("unused") Nurse n:nurses) {
-        	
+        for(@SuppressWarnings("unused") Nurse n:hNurses) {
+
         	count+=1;
         }
         
@@ -126,12 +126,14 @@ public class Hospital {
 		
 	}
 	
-    public void openWard(String wNum, String wType) {
+    public Ward openWard( String wType) {
     	
-    	Ward wd = new Ward(wNum, wType);
+    	Ward wd = new Ward(wType);
     	
     	wards.add(wd);
-    	
+
+    	return wd;
+
     }
     
     public void openLab(String lNum) {
