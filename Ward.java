@@ -9,7 +9,11 @@
  * 
  * */
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class Ward {
+
+	private static final AtomicInteger count = new AtomicInteger(0);
 
 	private String wardNum;
 	
@@ -17,9 +21,9 @@ public class Ward {
 	
 	
 	
-	public Ward(String wNum, String wType) {
+	public Ward(String wType) {
     	
-		wardNum = wNum;
+		wardNum = "FMC-W-0" + count;
         
         type = wType;
         
