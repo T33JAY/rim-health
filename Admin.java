@@ -9,7 +9,11 @@
  * 
  * */
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class Admin {
+
+    private static final AtomicInteger count = new AtomicInteger(0);
 
     private String adminID;
     
@@ -17,9 +21,9 @@ public class Admin {
     
     
 
-    public Admin (String adminID, String adminName) {
-    	
-        this.adminID = adminID;
+    public Admin (String adminName) {
+
+        this.adminID = "FMC-P-0" + count.incrementAndGet();
         
         this.adminName = adminName;
     
@@ -50,36 +54,34 @@ public class Admin {
     }
 
     public void generateBill() {
-    
-    	//TO DO: Logic??
+
+        System.out.println("\nTotal sum of medical expenses forwarded to the accounting department");
     
     }
     
     public void maintainRecords() {
-        
-    	//TO DO: Logic??
+
+        System.out.println("\nDatabase updated.");
     
     }
 
     public void assignNurse(Nurse nurse, Patient patient) {
     
-        System.out.println("You have successfully assigned Nurse "+nurse.getFirstName()+" to the patient with ID " +patient.getpatientID());
+        System.out.println("You have successfully assigned Nurse " + nurse.getFirstName() + " to the patient with ID "
+                            + patient.getpatientID());
     
     }
 
-    public void admitPatient(Patient patient) {
-        /* 
-        TO DO: Check for unassigned ward (already existing instances)
-               Assign to the ward to the patient with patientID 
-        */
-        System.out.println("You have successfully admitted "+patient.getpatientName()+" as a patient");
+    public void admitPatient(Patient patient, Hospital hospital, String wardType) {
+        patient.setWard(hospital.openWard(wardType));
+        System.out.println("You have successfully admitted " + patient.getpatientName() + "as a patient");
     
     }
 
 
-    public void assignSurgeon(Doctor doctor, Patient patient) {
+    public void assignSurgeon(Surgeon surgeon, Patient patient) {
         
-    	System.out.println("You have successfully assigned a surgeon to "+patient.getpatientName());
+    	System.out.println("You have successfully assigned a surgeon to " + patient.getpatientName());
     
     }
 
