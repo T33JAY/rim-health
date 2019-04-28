@@ -1,3 +1,4 @@
+package com.fmc;
 /*
  * @name 			RIM Health
  * 
@@ -12,38 +13,29 @@
 public class Surgeon extends Doctor {
 
 
-    private int yearsofExperience;
-    
-    private final String specialty;
+    private final String type;
 
     
     
-    public Surgeon(String dname, String did, String dlevel, int sexp, String sspec, String f) {
+    public Surgeon(String dname, String did, String dlevel, int sexp, String type) {
         
-    	super(dname, did, dlevel);
+    	super(dname, did, dlevel, sexp);
+
         
-    	this.yearsofExperience = sexp;
-        
-    	this.specialty = sspec;
-    
-    }
-    
-    public Integer getyearsofExperience() {
-        
-    	return yearsofExperience;
+    	this.type = type;
     
     }
 
-    public String getspeciality() {
+    public String getType() {
         
-    	return specialty;
+    	return this.type;
     
     }
     
     @Override
     public String toString() {
         
-    	return (super.getName() + "" + specialty);
+    	return (super.getName() + " - " + this.type);
     
     }
 
