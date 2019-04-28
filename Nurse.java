@@ -88,4 +88,8 @@ public class Nurse {
 
     }
 
+    @Override
+    public String toString() {
+        return ("Nurse ID: " + this.staffID + "\nNurse Name: " + this.firstName + this.lastName);
+    }
 }
