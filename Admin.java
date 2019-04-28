@@ -11,6 +11,7 @@
 
 import java.util.concurrent.atomic.AtomicInteger;
 
+
 public class Admin {
 
     private static final AtomicInteger count = new AtomicInteger(0);
@@ -67,14 +68,18 @@ public class Admin {
 
     public void assignNurse(Nurse nurse, Patient patient) {
     
-        System.out.println("You have successfully assigned Nurse " + nurse.getFirstName() + " to the patient with ID "
-                            + patient.getpatientID());
+        System.out.println(
+        		"You have successfully assigned Nurse " + nurse.getFirstName() +
+        		" to the patient with ID "+ patient.getpatientID()
+        );
     
     }
 
     public void admitPatient(Patient patient, Hospital hospital, String wardType) {
-        patient.setWard(hospital.openWard(wardType));
-        System.out.println("You have successfully admitted " + patient.getpatientName() + "as a patient");
+        
+    	patient.setWard(hospital.openWard(wardType));
+        
+    	System.out.println("You have successfully admitted " + patient.getpatientName() + "as a patient");
     
     }
 

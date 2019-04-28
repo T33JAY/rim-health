@@ -11,6 +11,7 @@
 
 import java.util.concurrent.atomic.AtomicInteger;
 
+
 public class Appointment {
 
     private static final AtomicInteger count = new AtomicInteger(0);
@@ -26,8 +27,7 @@ public class Appointment {
 
 
 
-    public Appointment (String date, String time, Patient patient)
-    {
+    public Appointment (String date, String time, Patient patient) {
 
         this.appointmentID = "FMC-A-0" + count.incrementAndGet();
 
@@ -39,32 +39,41 @@ public class Appointment {
 
 
     }
+    
     public String getAppointmentID(){
-        return this.appointmentID;
+        
+    	return this.appointmentID;
+    
     }
 
 
     public String getDate() {
-        return this.date;
+        
+    	return this.date;
+    
     }
 
     public String getTime() {
-        return this.time;
+        
+    	return this.time;
+    
     }
 
     public Patient getPatient() {
-        return this.patient;
+        
+    	return this.patient;
+    
     }
 
     public String getInfo() {
-        return (
+        
+    	return (
                 "Appointment Info:\n"+
-                        "Patient:"+this.patient.getpatientName()+"\n"+
-                        "Date:"+this.date+"\n"+
-                        "Time:"+this.time+"\n"
+        		"Patient:"+this.patient.getpatientName()+"\n"+
+                "Date:"+this.date+"\n"+
+                "Time:"+this.time+"\n"
         );
 
     }
-
-
+    
 }

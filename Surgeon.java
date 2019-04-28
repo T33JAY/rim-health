@@ -1,4 +1,3 @@
-package com.fmc;
 /*
  * @name 			RIM Health
  * 
