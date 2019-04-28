@@ -10,9 +10,13 @@
  * */
 
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class Patient {
-	
-    private int patientID;
+
+    private static final AtomicInteger count = new AtomicInteger(0);
+
+    private String patientID;
     
     private String patientName;
     
@@ -28,35 +32,32 @@ public class Patient {
 
     
     
-    public Patient (
-    		int patientID, String patientName, int patientAge,String patientGender, 
-    		String patientAddress, String condition, Ward ward
-    ) 
+    public Patient (String patientName, int patientAge,String patientGender,
+    		        String patientAddress, String condition)
     {
         
-    	this.patientID = patientID;
+    	this.patientID = "FMC-P-0" + count.incrementAndGet();
         
     	this.patientName = patientName;
         
     	this.patientAge = patientAge;
-        
+
     	this.patientGender = patientGender;
         
         this.patientAddress = patientAddress;
         
         this.condition = condition;
-        
-        this.ward = ward;
+
     
     }   
 
-    public void setpatientID(int patientID){
+    public void setpatientID(String patientID){
         
     	this.patientID = patientID;
     
     }
     
-    public int getpatientID(){
+    public String getpatientID(){
         
     	return patientID;
     
@@ -115,13 +116,26 @@ public class Patient {
     	this.condition = condition;
     
     }
+
+    public Ward getWard() {
+        return this.ward;
+    }
+
+    public void setWard(Ward ward) {
+        this.ward = ward;
+    }
+
+    public void requestCheckup(){
+        System.out.println("You've successfully requested for a check-up.");
+    }
     
     @Override
     public String toString(){
         
     	return (
-    			patientID +" "+ patientName +" "+ patientAge +" "+ 
-    			patientGender +" "+ patientAddress +" "+ condition +" "+ ward
+    			"Patient ID: "+ this.patientID +"\nPatient Name: "+ patientName +"\nPatient Age: "+ this.patientAge +
+                        "\nPatient Gender: "+ this.patientGender +"\n Patient Address: "+ this.patientAddress +
+                        "\nPatient Condition: "+ this.condition +"\n Patient Ward: "+ this.ward
     	);
     }
 
