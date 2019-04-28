@@ -18,18 +18,22 @@ public class Doctor {
 	private String StaffID;
 	
 	private String level;
+
+    	private int yearsOfExperience;
     
 	private List<Patient> patientlist;
 
     
 
-    public Doctor(String dname, String did, String dlevel) {
+    public Doctor(String dname, String did, String dlevel, int yearsOfExperience) {
         
     	this.name = dname;
         
     	this.StaffID = did;
         
     	this.level = dlevel;
+
+    	this.yearsOfExperience = yearsOfExperience;
     	
     }
 
@@ -37,6 +41,10 @@ public class Doctor {
         
     	return name;
     
+    }
+
+    public int getYearsOfExperience(){
+        return this.yearsOfExperience;
     }
 
     public String getLevel() {
